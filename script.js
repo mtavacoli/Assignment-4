@@ -30,3 +30,5 @@ var startButton = document.querySelector("#startbtn");
 function test() {
   console.log("connected");
 }
+
+var viewHighScores = document.querySelector("#viewhisco");
