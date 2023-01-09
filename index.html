@@ -41,13 +41,113 @@
           <div class="col-6">
             <h2 id="question">Here is a question</h2>
             <ul class="px-0 nobullets">
-              <li class="mb-3"
+              <li class="mb-3">
+                <button
+                  id="answer1"
+                  value="0"
+                  type="button"
+                  class="btn btn-success ansBtn"
+                >
+                  Answer1
+                </button>
+              </li>
+              <li class="mb-3">
+                <button
+                  id="answer2"
+                  value="1"
+                  type="button"
+                  class="btn btn-success ansBtn"
+                >
+                  Answer2
+                </button>
+              </li>
+              <li class="mb-3">
+                <button
+                  id="answer3"
+                  value="2"
+                  type="button"
+                  class="btn btn-success ansBtn"
+                >
+                  Answer3
+                </button>
+              </li>
+              <li class="mb-3">
+                <button
+                  id="answer4"
+                  value="3"
+                  type="button"
+                  class="btn btn-success ansBtn"
+                >
+                  Answer4
+                </button>
+              </li>
             </ul>
+          </div>
+        </div>
+      </section>
+      <section id="final">
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6">
+            <h2>All done!</h2>
+            <p>Your final score is: <span id="score" class="pl-1">0</span></p>
+            <!-- <p class="score">Your final score is: </p> -->
+            <p>
+              Enter initials:
+              <span class="ml-1"
+                ><input placeholder="initials" id="initials"
+              /></span>
+              <button
+                id="submit-score"
+                class="btn btn-success mx-1 my-1 d-inline-block"
+              >
+                Submit
+              </button>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="highscores">
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6">
+            <h2>High Scores</h2>
+            <!-- High scores should be added as a sorted desc list -->
+            <ol id="score-list">
+              <!-- <li></li> -->
+            </ol>
+            <button
+              id="goback"
+              class="btn btn-success d-inline-block mx-1 my-1"
+            >
+              Go back
+            </button>
+            <button
+              id="clearscores"
+              class="btn btn-success mx-1 my-1 d-inline-block"
+            >
+              Clear scores
+            </button>
           </div>
         </div>
       </section>
     </main>
 
     <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
